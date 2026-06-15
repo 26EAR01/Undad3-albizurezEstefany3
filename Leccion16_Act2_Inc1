@@ -1,0 +1,26 @@
+Console.WriteLine("Estefany ALbizurez/ clave 2");
+Console.WriteLine("Lecc16-Act2-inciso1");
+
+//Arreglo de enteros
+int[] edadesPersona=new int [7];
+int cantidadPersonasMayores = 0;
+
+//solicitar edades de las personas
+for (int i = 0; i < edadesPersona.Length; i++)
+{
+    Console.Write("Ingrese la edad" +(i+1)+ ":");
+    edadesPersona[i] = Convert.ToInt32(Console.ReadLine());
+    if (edadesPersona[i] >= 18)
+    {
+        cantidadPersonasMayores++;
+    }
+}
+//mostar lso datos del arreglo 
+Console.Clear();
+Console.WriteLine("Las edades ingresadas son : ");
+for (int i = 0; i < edadesPersona.Length; i++)
+{
+    Console.Write(edadesPersona[i] + " - ");
+}
+Console.WriteLine();
+Console.WriteLine("La cantidad de personas mayores de edad es: " + cantidadPersonasMayores);
