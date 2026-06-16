@@ -1,0 +1,27 @@
+Algoritmo Act3_Lecc16_Inc1
+	Dimensionar numerosEnteros[15]
+	
+	definir indice, comparador Como Real
+	Definir existeRepetido Como Logico
+	
+	existeRepetido=Falso
+	
+	Para indice=1 Hasta 15 Hacer
+		Escribir "Ingrese el numero ", indice, ":"
+		leer numerosEnteros[indice]
+	FinPara
+	
+	para indice = 1 Hasta 14 Hacer 
+		Para comparador = indice + 1 Hasta 15 hacer 
+			si numerosEnteros[indice] = numerosEnteros[indice] Entonces
+				existeRepetido = verdadero 
+			FinSi
+		FinPara
+	FinPara
+	
+	Si existeRepetido Entonces 
+		Escribir  "Si Existe al menos un numero repetido."
+	SiNo
+		Escribir  "No existe ningun numero repetido."
+	FinSi
+FinAlgoritmo
