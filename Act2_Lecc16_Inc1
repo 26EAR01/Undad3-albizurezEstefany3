@@ -1,0 +1,17 @@
+Algoritmo Act_Lecc16_Inc1
+	
+	Dimension edadesPersonas[7]
+	
+	Definir indice, cantidadMayorEdad Como Entero
+	
+	cantidadMayorEdad = 0
+    Para indice = 1 Hasta 7 Hacer
+		Escribir "Ingrese la edad de la persona", indice, ":"
+		leer edadesPersonas[indice]
+		
+		si edadesPersonas[indice] >= 18 Entonces
+			cantidadMayorEdad = cantidadMayorEdad + 1
+		FinSi
+	FinPara
+	Escribir "Cantidad de personas mayores de edad: ", cantidadMayorEdad
+FinAlgoritmo
